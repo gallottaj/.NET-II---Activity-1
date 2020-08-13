@@ -72,6 +72,7 @@ namespace CarShopConsoleApp
 
                 }
 
+
                 action = chooseAction();
             }
         }
