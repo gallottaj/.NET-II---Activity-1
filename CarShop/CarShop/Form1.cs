@@ -75,5 +75,15 @@ namespace CarShop
 
             cartBindingSource.ResetBindings(false);
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -44,6 +44,10 @@
             this.lst_shopping_cart = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_total = new System.Windows.Forms.Label();
+            this.Color = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -51,6 +55,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.Color);
             this.groupBox1.Controls.Add(this.btn_create_a_car);
             this.groupBox1.Controls.Add(this.txt_price);
             this.groupBox1.Controls.Add(this.label1);
@@ -117,7 +125,7 @@
             // 
             // btn_create_a_car
             // 
-            this.btn_create_a_car.Location = new System.Drawing.Point(63, 119);
+            this.btn_create_a_car.Location = new System.Drawing.Point(63, 182);
             this.btn_create_a_car.Name = "btn_create_a_car";
             this.btn_create_a_car.Size = new System.Drawing.Size(75, 23);
             this.btn_create_a_car.TabIndex = 7;
@@ -200,6 +208,40 @@
             this.lbl_total.TabIndex = 6;
             this.lbl_total.Text = "total";
             // 
+            // Color
+            // 
+            this.Color.AutoSize = true;
+            this.Color.Location = new System.Drawing.Point(6, 103);
+            this.Color.Name = "Color";
+            this.Color.Size = new System.Drawing.Size(31, 13);
+            this.Color.TabIndex = 8;
+            this.Color.Text = "Color";
+            this.Color.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 129);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Year";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(63, 100);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(63, 126);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,6 +284,10 @@
         private System.Windows.Forms.Button btn_checkout;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_total;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Color;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
