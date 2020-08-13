@@ -117,11 +117,11 @@
             // 
             // btn_create_a_car
             // 
-            this.btn_create_a_car.Location = new System.Drawing.Point(9, 119);
+            this.btn_create_a_car.Location = new System.Drawing.Point(63, 119);
             this.btn_create_a_car.Name = "btn_create_a_car";
             this.btn_create_a_car.Size = new System.Drawing.Size(75, 23);
             this.btn_create_a_car.TabIndex = 7;
-            this.btn_create_a_car.Text = "Create";
+            this.btn_create_a_car.Text = "Create a Car";
             this.btn_create_a_car.UseVisualStyleBackColor = true;
             this.btn_create_a_car.Click += new System.EventHandler(this.btn_create_a_car_Click);
             // 
@@ -151,6 +151,7 @@
             this.btn_add_to_cart.TabIndex = 2;
             this.btn_add_to_cart.Text = "Add to Cart";
             this.btn_add_to_cart.UseVisualStyleBackColor = true;
+            this.btn_add_to_cart.Click += new System.EventHandler(this.btn_add_to_cart_Click);
             // 
             // groupBox3
             // 
@@ -171,6 +172,7 @@
             this.btn_checkout.TabIndex = 4;
             this.btn_checkout.Text = "Checkout";
             this.btn_checkout.UseVisualStyleBackColor = true;
+            this.btn_checkout.Click += new System.EventHandler(this.btn_checkout_Click);
             // 
             // lst_shopping_cart
             // 
@@ -212,6 +214,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
