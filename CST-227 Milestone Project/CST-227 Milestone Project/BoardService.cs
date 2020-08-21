@@ -5,20 +5,39 @@ namespace CST_227_Milestone_Project
     public class BoardService
     {
         public Board b;
-        
+
+        //public int xSize { get; private set; }
+
         public BoardService(Board gameBoard)
         {
             b = gameBoard;
         }
 
+        //method to activate random percentage of cells to become live
         public void populateBoardWithBombs()
         {
-            // code here to add bombs
+
         }
+
 
         public void countBombsNearCells()
         {
-            // code here to count bombs near cells
+            //create a random percentage between 15-20 % to create live cells 
+            Random rand = new Random();
+            double percent = rand.Next(15, 20);
+            percent = percent / 100;
+
+            //find the complete cell count 
+            double numOfCells = b.xSize * b.xSize;
+
+            //find the number of cells that will be live 
+            double ranCount = Math.Round(numOfCells * percent, 0);
+
+            //create an array of ints to hold the number of random live cells 
+            int[] ranLive = new int[Convert.ToInt32(ranCount)];
+
+            //print test
+            Console.WriteLine("number of live cells is " + ranCount);
         }
 
         public void printBoard()
@@ -44,6 +63,7 @@ namespace CST_227_Milestone_Project
                 }
                 Console.WriteLine();
             }
+            populateBoardWithBombs();
         }
     }
 }

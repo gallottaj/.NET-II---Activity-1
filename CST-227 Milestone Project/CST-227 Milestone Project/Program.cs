@@ -21,12 +21,15 @@ namespace CST_227_Milestone_Project
             //print empty game board
             boardService = new BoardService(b);
             boardService.printBoard();
-		
+            boardService.countBombsNearCells();
+
+
             Console.ReadLine();
             //Call the Board.setupLiveNeighbors and Board.calculateLiveNeighbors commands to initialize the grid.
             //b.setupLiveNeighbors();
 
             //Call the printBoard method to display the contents of the grid.
+            
         }
 
         public Cell setCell()
