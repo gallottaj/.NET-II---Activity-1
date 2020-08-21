@@ -42,7 +42,5 @@ namespace CST_227_Milestone_Project
 
             return b.Grid[currentRow, currentColumn];
         }
-
-
     }
 }

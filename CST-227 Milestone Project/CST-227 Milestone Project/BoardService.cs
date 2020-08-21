@@ -13,9 +13,10 @@ namespace CST_227_Milestone_Project
             b = gameBoard;
         }
 
-        //method to activate random percentage of cells to become live
         public void populateBoardWithBombs()
         {
+
+
 
         }
 
@@ -39,6 +40,7 @@ namespace CST_227_Milestone_Project
             //print test
             Console.WriteLine("number of live cells is " + ranCount);
         }
+
 
         public void printBoard()
         {
