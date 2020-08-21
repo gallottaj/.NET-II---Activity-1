@@ -40,9 +40,19 @@ namespace CarShop
 
         private void btn_create_a_car_Click(object sender, EventArgs e)
         {
-            Car c = new Car(txt_make.Text, txt_model.Text, decimal.Parse(txt_price.Text));
+            try
+            {
+                Car c = new Car(txt_make.Text, txt_model.Text, decimal.Parse(txt_price.Text), txt_color.Text, int.Parse(txt_year.Text));
+                myStore.CarList.Add(c);
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("this is not an integer! please try again");
+
+            }
+           
             //MessageBox.Show(c.ToString());
-            myStore.CarList.Add(c);
             carInventoryBindingSource.ResetBindings(false);
         }
 
@@ -82,6 +92,21 @@ namespace CarShop
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_make_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_price_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
