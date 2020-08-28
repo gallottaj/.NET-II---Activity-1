@@ -13,8 +13,10 @@ namespace CST_227_Milestone_Project
 	class Program
 	{
 		//create instance of Board 
-		static Board b = new Board(10);
+		static Board b = new Board(45);
         static BoardService boardService;
+        static Game g = new Game();
+        static GameService gameService;
 
 		public static void Main(string[] args)
 		{
@@ -22,25 +24,8 @@ namespace CST_227_Milestone_Project
             boardService = new BoardService(b);
             boardService.printBoard();
             boardService.countBombsNearCells();
-
-
             Console.ReadLine();
-            //Call the Board.setupLiveNeighbors and Board.calculateLiveNeighbors commands to initialize the grid.
-            //b.setupLiveNeighbors();
-
-            //Call the printBoard method to display the contents of the grid.
-            
-        }
-
-        public Cell setCell()
-        {
-            Console.WriteLine("enter row");
-            int currentRow = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter current column");
-            int currentColumn = int.Parse(Console.ReadLine());
-
-            return b.Grid[currentRow, currentColumn];
+            gameService.GameLoop();
         }
     }
 }

@@ -11,9 +11,13 @@ namespace CST_227_Milestone_Project
 {
 	public class Cell
 	{
-		public int row { get; set; } 
+        internal bool visited;
+
+        public int row { get; set; } 
 		public int column { get; set; }
 		public bool isBomb { get; set; }
+
+		public bool isVisited { get; set; }
 
 		//public int bombsNear { get; set; }
 		//constructor
@@ -22,6 +26,5 @@ namespace CST_227_Milestone_Project
 			row = x;
 			column = y;
 		}
-
     }
 }
